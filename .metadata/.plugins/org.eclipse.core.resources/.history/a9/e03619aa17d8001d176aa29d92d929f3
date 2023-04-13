@@ -1,0 +1,25 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int inp = 0;
+		String message = "";
+		String inpS = "입력하신 숫자 ";
+
+		System.out.print("숫자를 입력하세요 : ");
+		inp = scanner.nextInt();
+
+		if (inp % 2 == 0) {
+			message = inpS + inp + "(은)는 짝수입니다.";
+		}else {
+			message = inpS + inp + "(은)는 홀수입니다.";
+		}
+		System.out.println(message);
+
+	}
+
+}

@@ -1,0 +1,72 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class TestTestTest {
+
+	public static void main(String[] args) {
+		// 국어, 영어, 수학 점수 입력하면 학점 알려주는 if문
+
+		double koreanScore = 0, englishScore = 0, mathScore = 0, avg = 0;
+		String korean = "국어", english = "영어", math = "수학", input = "점수를 입력하세요 : ";
+		String koResult, engResult, mathResult = "";
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print(korean + input);
+		koreanScore = scanner.nextDouble();
+		System.out.print(english + input);
+		englishScore = scanner.nextDouble();
+		System.out.print(math + input);
+		mathScore = scanner.nextDouble();
+
+		avg = (koreanScore + englishScore + mathScore) / 3;
+
+		if ((koreanScore < 0) || (koreanScore > 100) || (englishScore < 0) || (englishScore > 100) || (mathScore < 0)
+				|| (mathScore > 100)) {
+			System.out.println("점수는 0에서 100 사이에서 입력해주세요.");
+		} else {
+			if (koreanScore >= 90) {
+				koResult = "A";
+			} else if (koreanScore >= 80) {
+				koResult = "B";
+			} else if (koreanScore >= 70) {
+				koResult = "C";
+			} else if (koreanScore >= 60) {
+				koResult = "D";
+			} else {
+				koResult = "F";
+			}
+
+			if (englishScore >= 90) {
+				engResult = "A";
+			} else if (englishScore >= 80) {
+				engResult = "B";
+			} else if (englishScore >= 70) {
+				engResult = "C";
+			} else if (englishScore >= 60) {
+				engResult = "D";
+			} else {
+				engResult = "F";
+			}
+
+			if (mathScore >= 90) {
+				mathResult = "A";
+			} else if (mathScore >= 80) {
+				mathResult = "B";
+			} else if (mathScore >= 70) {
+				mathResult = "C";
+			} else if (mathScore >= 60) {
+				mathResult = "D";
+			} else {
+				mathResult = "F";
+			}
+
+			System.out.println(korean + "는 " + koResult);
+			System.out.println(english + "는 " + engResult);
+			System.out.println(math + "는 " + mathResult);
+		}
+
+	}
+
+}

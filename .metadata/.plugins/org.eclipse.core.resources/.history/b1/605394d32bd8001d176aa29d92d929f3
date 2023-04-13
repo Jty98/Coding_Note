@@ -1,0 +1,96 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		// Declare
+//		Scanner scanner = new Scanner(System.in);
+//		int pay = 0; // 사용자 금액 입력
+//		String message = ""; // 출력값 멘트
+//
+//		// Input
+//		System.out.print("금액을 입력하세요! : ");
+//		pay = scanner.nextInt();
+//
+//		// Process
+//		// 연관된게 아니면 and사용 X
+//		if (pay >= 8000) {
+//			message = "너무 비쌉니다.";
+//		} else if (pay >= 5000) {
+//			message = "조금 비쌉니다.";
+//		} else if (pay >= 3000) {
+//			message = "적당한 금액입니다.";
+//		} else {
+//			message = "싼 편입니다.";
+//		}
+//
+//		// Output
+//		System.out.println(message);
+		Scanner language = new Scanner(System.in);
+		Scanner english = new Scanner(System.in);
+		Scanner math = new Scanner(System.in);
+		
+		int scLanguage = 0, scEnglish = 0, scMath = 0;
+		
+	
+	
+		String hi = "보다 높습니다.";
+		String same = "입니다.";
+		String low = "보다 낮습니다.";
+		String messeage = "";
+		
+		// Input
+		System.out.print("국어점수를 입력하세요. ");
+			scLanguage = language.nextInt();
+		System.out.print("영어점수를 입력하세요. ");
+			scEnglish = english.nextInt();
+		System.out.print("수학점수를 입력하세요. ");
+			scMath = math.nextInt();
+			
+		
+		//process
+		//평균
+		int average = (scLanguage + scEnglish + scMath) / 3;		
+		// 국어평균
+		if(scLanguage > average) {
+			messeage = hi;
+		}else if(scLanguage == average){
+			messeage = same;
+		}else {
+			messeage = low;
+		}
+		// 영어평균
+		if(scEnglish > average) {
+			messeage = hi;
+		}else if(scEnglish == average){
+			messeage = same;
+		}else {
+			messeage = low;
+		}
+		// 수학평균
+		if(scMath > average) {
+			messeage = hi;
+		}else if(scMath == average){
+			messeage = same;
+		}else {
+			messeage = low;
+		}
+		
+		// Output
+		System.out.println("평균점수 : " + average);
+		
+		System.out.println("국어점수는 평균" + messeage);
+		System.out.println("영어점수는 평균" + messeage);
+		System.out.println("수학점수는 평균" + messeage);
+				
+		
+	}
+}
+		
+		
+
+	}
+
+}

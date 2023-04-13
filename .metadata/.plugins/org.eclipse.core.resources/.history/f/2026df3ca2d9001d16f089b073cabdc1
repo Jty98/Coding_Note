@@ -1,0 +1,15 @@
+package com.javalec.base;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 배열(Array)
+		// 문자열 배열 데이터 7개를 생성
+		String[] str = new String[7]; // 메모리에 새로 저장할때는 new
+		str[0] = "일요일";
+		
+		System.out.println(0);
+
+	}
+
+}

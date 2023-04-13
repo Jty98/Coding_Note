@@ -1,0 +1,111 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 구구단 출력하기
+//		String[] str = { "Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Set" };
+//		int[] inNum = { 10, 20, 30 };
+//		double[] doubleNum = { 1.1, 1.2 };
+//		boolean[] boolNum = { true, false, true, true };
+//
+//		int sum = 0; // str출력변수
+//		int sum1 = 0; // intNum출력변수
+//		double avg = 0; // doubleNum평균변수
+//
+//		// str 전체 출력해보기
+//		for (int i = 0; i < str.length; i++) {
+//			sum += i;
+//			System.out.print(str[i] + "\t");
+//		}
+//		System.out.println();
+//		// intNum의 합계 구하기
+//		sum = 0;
+//		for (int i = 0; i < inNum.length; i++) {
+//			sum += inNum[i];
+//		}
+//		System.out.println("intNum의 합계 : " + sum);
+//
+//		// doubleNum의 평균 구하기
+//		sum = 0;
+//		for (int i = 0; i < doubleNum.length; i++) {
+//			sum += doubleNum[i];
+//			avg = sum / doubleNum.length;
+//		}
+//		System.out.println("doubleNum의 평균 : " + avg);
+//
+//		// boolNum중 true의 갯수 구하기
+//		sum = 0;
+//		for (int i = 0; i < boolNum.length; i++) {
+//			if (boolNum[i] == true) {
+//				sum += 1;
+//			}
+//		}
+//		System.out.println("true의 갯수 : " + sum);
+
+//		int numArray[] = new int[5];
+//		int sum = 0;
+//
+//		Scanner scanner = new Scanner(System.in);
+//
+//		// 시작
+//		System.out.println("5개의 숫자를 입력하세요");
+//
+//		// 입력
+//		for (int i = 0; i < numArray.length; i++) {
+//			System.out.print(i + 1 + "번 숫자: ");
+//			numArray[i] = scanner.nextInt();
+//			// 합계
+//			sum += numArray[i];
+//		}
+//		System.out.println("--------------------");
+//		System.out.println("입력하신 숫자는 다음과 같습니다. \n");
+//
+//		//
+//		for (int i = 0; i < numArray.length; i++) {
+//			System.out.println((i + 1) + ") " + numArray[i]);
+//
+//		}
+//		System.out.println("입력된 숫자의 합은 : " + sum);
+		
+		
+		// 최신순
+		
+		//숫자의 갯수는 최대 100개 입니다. 몇개의 숫자를 입력하시겠습니까? 5
+		
+		
+		int scan = 0;
+		//int input = 0;
+		int sum = 0;
+
+		Scanner scanner = new Scanner(System.in);
+
+		// 시작
+		System.out.print("숫자의 갯수는 최대 100개 입니다. 몇개의 숫자를 입력하시겠습니까? : ");
+		scan = scanner.nextInt();
+		int numArray[] = new int[scan];
+
+		// 입력
+		System.out.println(scan + "개의 숫자를 입력하세요");
+		for (int i = 0; i < numArray.length; i++) {
+			System.out.print(i + 1 + "번 숫자: ");
+			numArray[i] = scanner.nextInt();
+			// 합계
+			sum += numArray[i];
+		}
+		System.out.println("--------------------");
+		System.out.println("입력하신 숫자는 다음과 같습니다. \n");
+
+		// index는 43210
+		for (int i = numArray.length-1; i >= 0; i--) {
+			System.out.println((i+1) + ") " + numArray[i]);
+
+		}
+		System.out.println("입력된 숫자의 합은 : " + sum);
+		
+		
+		
+	}
+}

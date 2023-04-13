@@ -1,0 +1,33 @@
+package com.javalec.base;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 구구단 출력하기
+		String [] str = {"Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Set"};
+		int [] inNum = {10, 20, 30};
+		double[] doubleNum = {1.1, 1.2};
+		boolean[] booNum = {true, false, true, true};
+		
+		int sum = 0;
+		
+		
+		
+		
+		// str 전체 출력해보기
+		for(int i=0; i<str.length; i++) {
+			sum += i;
+			System.out.println(str[i]);
+		}	
+		// intNum의 합계 구하기
+		for(int i=0; i<str.length; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
+		// doubleNum의 평균 구하기
+		
+		
+		// boolNum중 true의 갯수 구하기
+		
+	}
+}

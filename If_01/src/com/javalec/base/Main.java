@@ -1,0 +1,41 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// condition
+		int i = 0, j = 0, k = 0;
+
+		Scanner scanner = new Scanner(System.in);
+//		String  str1 	= new String("abc"); // 근본 스트링(대문자로 시작하는 변수는 new를 사용)
+
+		System.out.print("i값을 입력해 주세요! : ");
+		i = scanner.nextInt();
+		System.out.print("j값을 입력해 주세요! : ");
+		j = scanner.nextInt();
+		System.out.print("k값을 입력해 주세요! : ");
+		k = scanner.nextInt();
+
+		if (j > i) {
+			System.out.println("j가 i보다 큽니다.");
+		} else if (j < i) {
+			System.out.println("j가 i보다 작습니다.");
+		} else {
+			System.out.println("j와 i는 같습니다.");
+		}
+		// 계산이 바뀌면 빠져나와야함
+		if (i == k) {
+			System.out.println("i와 k가 같습니다.");
+		} else if (i < k) {
+			System.out.println("i가 k보다 작습니다.");
+		} else {
+			System.out.println("i가 k보다 큽니다.");
+		}
+
+		System.out.println("--- End ---");
+
+	}
+
+}

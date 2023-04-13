@@ -1,0 +1,46 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		 * James의 신장을 입력하세요! 170 Carhy의 신장을 입력하세요! 165 Kenny의 신장을 입력하세요! 180 Martin의 신장을
+		 * 입력하세요! 190 Crystal의 신장을 입력하세요! 165 평균신장은 : 174 가장 큰 학생은 Martin 이고 그 학생의 키는
+		 * 190 가장 작은 학생은 Cathy 이고 그 학생의 키는 165
+		 */
+
+		Scanner scanner = new Scanner(System.in);
+		String nameArray[] = { "James", "Carhy", "Kenny", "Martin", "Crystal" };
+		int sum = 0;
+		int height = 0; // 입력받은 키
+		int big = 0;
+		int small = 0;
+		double avg = 0;
+
+		// 입력받기
+		for (int i = 0; i < nameArray.length; i++) {
+			System.out.print(nameArray[i] + "의 신장을 입력하세요! ");
+			height = scanner.nextInt();
+			sum += height;
+		}
+		// 평균 구하기
+		avg = sum / nameArray.length;
+		System.out.println("평균신장은 : " + avg);
+		
+		System.out.println("dddd" + nameArray[height]);
+		
+		for (int i = 0; i <= nameArray.length; i++) {
+
+			
+		}
+		
+		//가장 큰 학생
+		//if(heigt > )
+
+		
+
+	}
+
+}

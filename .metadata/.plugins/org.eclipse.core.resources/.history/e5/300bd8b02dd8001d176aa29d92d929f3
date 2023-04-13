@@ -1,0 +1,85 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		// Declare
+//		Scanner scanner = new Scanner(System.in);
+//		int pay = 0; // 사용자 금액 입력
+//		String message = ""; // 출력값 멘트
+//
+//		// Input
+//		System.out.print("금액을 입력하세요! : ");
+//		pay = scanner.nextInt();
+//
+//		// Process
+//		// 연관된게 아니면 and사용 X
+//		if (pay >= 8000) {
+//			message = "너무 비쌉니다.";
+//		} else if (pay >= 5000) {
+//			message = "조금 비쌉니다.";
+//		} else if (pay >= 3000) {
+//			message = "적당한 금액입니다.";
+//		} else {
+//			message = "싼 편입니다.";
+//		}
+//
+//		// Output
+//		System.out.println(message);
+		Scanner scanner = new Scanner(System.in);
+
+		int korean, english, math = 0;
+		String message1 = null, message2 = null, message3 = null;
+		String high = "보다 높습니다.";
+		String same = "입니다.";
+		String low = "보다 낮습니다.";
+
+		System.out.print("국어 점수를 입력하세요 : ");
+		korean = scanner.nextInt();
+		System.out.print("영어 점수를 입력하세요 : ");
+		english = scanner.nextInt();
+		System.out.print("수학 점수를 입력하세요 : ");
+		math = scanner.nextInt();
+
+		int average = (korean + english + math) / 3;
+
+		System.out.println("평균점수 : " + average);
+
+		if ((korean >= 0) && (korean <= 100)) {
+
+			if (average < korean) {
+				message1 = high;
+			} else if (average == korean) {
+				message1 = same;
+			} else {
+				message1 = low;
+			}
+
+			if (average < english) {
+				message2 = high;
+			} else if (average == english) {
+				message2 = same;
+			} else {
+				message2 = low;
+			}
+
+			if (average < math) {
+				message3 = high;
+			} else if (average == math) {
+				message3 = same;
+			} else {
+				message3 = low;
+			}
+		} else {
+			System.out.println("0에서 100사이로 입력하세");
+		}
+
+		System.out.println("국어 점수는 평균" + message1);
+		System.out.println("영어 점수는 평균" + message2);
+		System.out.println("수학 점수는 평균" + message3);
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.javalec.base;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// condition
+		
+		int i = 10, j = 20, k = 10;
+		
+		if(j > i) {
+			System.out.println("j가 i보다 큽니다.");
+		}
+		// 계산이 바뀌면 빠져나와야함
+		if (i == k) {
+			System.out.println("i와 k가 같습니다.");
+		}
+		
+		
+		System.out.println("--- End ---");
+		
+
+	}
+
+}
