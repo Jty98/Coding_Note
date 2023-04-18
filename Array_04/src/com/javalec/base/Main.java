@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
-		
+
 //		  James의 신장을 입력하세요! 170
 //		  Carhy의 신장을 입력하세요! 165
 //		  Kenny의 신장을 입력하세요! 180
@@ -53,7 +52,7 @@ public class Main {
 		}
 		System.out.println("평균신장은 : " + avg);
 		System.out.println("가장 큰 학생은 " + nameArray[maxArrayNo] + "이고 그 학생의 키는 " + maxHeight);
-		 System.out.println("가장 작은 학생은 " + nameArray[minArrayNo] + "이고 그 학생의 키는 " + minHeight);
+		System.out.println("가장 작은 학생은 " + nameArray[minArrayNo] + "이고 그 학생의 키는 " + minHeight);
 
 	}
 

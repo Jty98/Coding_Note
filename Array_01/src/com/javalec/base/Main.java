@@ -15,13 +15,13 @@ public class Main {
 //		str[4] = "목요일";
 //		str[5] = "금요일";
 //		str[6] = "토요일";
-
+//
 //		C Create
 //		R Read
 //		U Update
 //		D Delete
 //		CRUD기반 언어 = SQL
-
+//
 //		String[] str = { "일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일" };
 //
 //		// 배열의 갯수 확인하기
@@ -47,7 +47,7 @@ public class Main {
 		// Read
 		for (int i = 0; i < intArray.length; i++) {
 			//if (intArray[i] % 2 == 0) {
-				intArray[i]++;
+				sum += intArray[i];
 				System.out.println(intArray[i]);
 			}
 		//}

@@ -2,5 +2,16 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.virtual.EnsureVirtualizedNode"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.StartNode"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.java.AbstractNewArrayNode"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.lir.alloc.trace.DefaultTraceRegisterAllocationPolicy.TraceLinearScanStrategy"/>
+    <fullyQualifiedTypeName name="java.rmi.server.RemoteObjectInvocationHandler"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.InternalError"/>
+    <fullyQualifiedTypeName name="com.javalec.function.SumEvenOdd"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

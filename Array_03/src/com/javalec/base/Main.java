@@ -87,7 +87,7 @@ public class Main {
 //		// 입력
 //		System.out.println(arryNum + "개의 숫자를 입력하세요");
 //		for (int i = 0; i < numArray.length; i++) {
-//			System.out.print(i + 1 + "번 숫자: ");
+//			System.out.print(i + 1 + "번숫자: ");
 //			numArray[i] = scanner.nextInt();
 //			// 합계
 //			sum += numArray[i];
