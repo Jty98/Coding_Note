@@ -7,7 +7,6 @@ INDEX VERSION 1.132+/Volumes/Data/JTY/Java/.metadata/.plugins/org.eclipse.jdt.co
 3854206521.index
 959960876.index
 1854083852.index
-2722214348.index
 2558667370.index
 1865797976.index
 768639137.index
